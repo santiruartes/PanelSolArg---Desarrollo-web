@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Integrador NUCBA - Desarrollo Web - Proyecto: Paneles Solarg</title>
   </head>
   <body>
@@ -29,18 +37,108 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main id="main">
       <section class="main__hero">
         <h1 class="main__titulo">ENERGIA SOLAR</h1>
         <div class="main__presentacion">
           <p>
             La energia alternativa ya es un hecho. Implementa tecnología premium
-            para tu empresa, casa e incluso vehículo.
+            para tu empresa, casa e incluso tu bicicleta.
           </p>
         </div>
       </section>
 
-      <section class="main__cards"></section>
+      <section id="main__us">
+        <div class="main__us__presentation">
+          <h2>Nuestra misión</h2>
+          <p>
+            Somos una empresa abocada a impulsar energia renovable y 15 años de
+            experiencia que avalan nuestra calidad. Desde
+            <span>PanelSolarg</span> contamos con tecnología premium y brindamos
+            el servicio de poder ser parte de la nueva generarción de energia.
+            Ya sea para tu empresa, casa o para tu bicicleta.
+          </p>
+        </div>
+        <img src="./assets/img-7.jpg" alt="panel solar en primera plana" />
+      </section>
+
+      <section id="main__cards">
+        <div class="main__cards__container">
+          <div class="main__cards__single">
+            <img src="./assets/img-card-1.png" alt="" />
+            <h3>TITULO1</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+              modi error doloribus, ab, reiciendis praesentium amet suscipit
+              ipsa dolorum earum quaerat itaque labore blanditiis ex iusto
+              tenetur molestias obcaecati. Dignissimos.
+            </p>
+          </div>
+          <div class="main__cards__single">
+            <img src="./assets/img-card-2.png" alt="" />
+            <h3>TITULO2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In at
+              asperiores ab cupiditate molestias mollitia deleniti! Illum
+              aliquid cum porro deleniti mollitia neque! Enim id doloremque,
+              cumque obcaecati minus hic.
+            </p>
+          </div>
+          <div class="main__cards__single">
+            <img src="./assets/img-card-3.png" alt="" />
+            <h3>TITULO3</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+              dignissimos repellat iste eos architecto facilis! Deleniti
+              obcaecati veniam numquam officiis earum maxime laboriosam quae
+              vitae odit, quia nihil voluptas mollitia?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contactanos</h2>
+        <div class="contact__father">
+          <div class="contact__main">
+            <p><i class="fa-solid fa-phone"></i> +54 555 4448</p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Fake Street 123,
+              Patagonia
+            </p>
+            <p><i class="fa-solid fa-envelope"></i> panelsolarg@net.com</p>
+            <iframe id="inlineFrameExample"
+                title="Inline Frame Example"
+                width="300"
+                height="200"
+                src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=es&amp;q=San%20Martin%20de%20los%20Andes+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">
+            </iframe>
+          </div>
+
+          <div class="contact__form">
+            <h3>Dejanos tu mensaje</h3>
+            <label for="nombre"></label>
+            <input type="text" id="nombre" placeholder="Nombre" />
+
+            <label for="correo"></label>
+            <input type="email" id="correo" placeholder="Email" />
+
+            <label for="texto"></label>
+            <textarea
+              id="texto"
+              cols="60"
+              rows="12"
+              placeholder="Escriba su mensaje aqui"
+            ></textarea>
+            <a href="#"><span>Enviar</span></a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      Hecho con ❤️ por un alumno de Nucba
+      <i class="fa-brands fa-instagram"></i>
+    </footer>
   </body>
 </html>

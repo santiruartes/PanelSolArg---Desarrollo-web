@@ -13,12 +13,13 @@
     --background-strong: #EDBB4A;
     --btn: #5fbc5c;
     --btn-black: #333333;
-    --grey: #BFBEBE;
-    --text-white: #f3f4f6;
+    --grey: #f1eded;
+    --white: #f3f4f6;
     --black: #111;
     font-family: "Poppins","Montserrat", "Times New Roman";
 }
 
+/* Sección header */
 
 #header {
     display: flex;
@@ -63,18 +64,15 @@
 
 .header__navbar__list2 {
     display: flex;
-    color: white;
     gap: 10px;
 }
 
 .header__navbar__list2 span {
+    color: white;
     border: 1px solid;
     border-radius: 15px;
     padding: 3px 10px;
-}
-
-.header__navbar__list2 span {
-   transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 
@@ -82,16 +80,17 @@
     background-color: #2e61ec;
     color: #2e61ec !important;
     border-radius: 15px;
+    transition: all 0.3s ease-in;
 }
 
-.main {
+/* Sección main */
+
+#main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(./assets/img-3.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background: linear-gradient(to bottom, #8fa1df, #c1cedf);
 }
 
 
@@ -100,8 +99,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
     gap: 80px;
+    background: url(./assets/img-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
 }
 
 
@@ -122,4 +125,120 @@
     font-size: 24px;
     color: white;
     padding: 50px 80px;
+}
+
+/* Presentación */
+
+#main__us {
+    display: flex;
+    padding: 60px 30px;
+    gap: 30px;
+}
+
+#main__us img {
+    width: 600px;
+    height: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.main__us__presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 15px;
+}
+
+
+/* Cards */
+
+#main__cards {
+    display: flex;
+    padding: 40px 20px;
+}
+
+.main__cards__container {
+    display: flex;
+    gap: 20px;
+}
+
+.main__cards__single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px 40px;
+    gap: 20px;
+    border-radius: 15px;
+    background: var(--background);
+    box-shadow: rgba(21, 21, 22, 0.25) 0px 13px 27px -5px, rgba(57, 54, 71, 0.3) 0px 8px 16px -8px;
+}
+
+
+/* Contacto */
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+    background: var(--btn);
+    border-radius: 15px;
+    box-shadow: rgba(21, 21, 22, 0.25) 0px 13px 27px -5px, rgba(57, 54, 71, 0.3) 0px 8px 16px -8px;
+}
+
+#contact h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact__father {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 40px 20px;
+}
+
+.contact__form a {
+    color: var(--black);
+    text-align: center;
+    background: var(--background-strong);
+    border-radius: 15px;
+    padding: 2px 0px;
+}
+
+.contact__form input, textarea {
+   font-family: Poppins;
+   background: var(--grey);
+   width : 300px;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: var(--white);
+    background: var(--black);
 }
