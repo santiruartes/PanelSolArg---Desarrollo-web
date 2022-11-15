@@ -261,12 +261,32 @@ footer a:visited {
  text-decoration: none; color: var(--white);
 }
 
+/* Login */
+
 #login {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background: url(./assets/img-6.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
 }
+
 /* Mediaqueries */
+.login__cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background: var(--white);
+    border-radius: 15px;
+    width: 500px;
+
+}
 
 @media (max-width: 768px) {
 
