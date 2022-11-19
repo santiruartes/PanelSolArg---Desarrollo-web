@@ -20,7 +20,8 @@
     font-family: "Poppins","Montserrat", "Times New Roman";
 }
 
-/* Sección header */
+/* Sección header 
+-Arreglar bien la lista entre inicio sesion/registro y demas*/
 
 #header {
     display: flex;
@@ -49,7 +50,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    border-right: 1px solid #fffafa;
+    /* border-right: 1px solid #fffafa; */
     float: left;
     list-style: none outside none;
     padding-left: 10px;
@@ -57,18 +58,14 @@
     width: auto;
 }
 
-.headear__navbar__list a,  .header__navbar__list2 a {
+.headear__navbar__list a {
     font-size: 14px;
     text-align: center;
     color: white;
 }
 
-.header__navbar__list2 {
-    display: flex;
-    gap: 10px;
-}
 
-.header__navbar__list2 span {
+.header__navbar__list span {
     color: white;
     border: 1px solid;
     border-radius: 15px;
@@ -77,12 +74,12 @@
 }
 
 
-.header__navbar__list2 :nth-child(2):hover {
+/* .header__navbar__list :nth-child(5):hover {
     background-color: #1b4965;
     color: #ffffff !important;
     border-radius: 15px;
     transition: all 0.3s ease-in;
-}
+} */
 
 /* Sección main */
 
@@ -142,7 +139,6 @@
     height: 50%;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
 }
 
 .main__us__presentation {
@@ -274,7 +270,6 @@ footer a:visited {
     width: 100%;
 }
 
-/* Mediaqueries */
 .login__cont {
     display: flex;
     flex-direction: column;
@@ -285,10 +280,78 @@ footer a:visited {
     background: var(--white);
     border-radius: 15px;
     width: 500px;
-
+    background: linear-gradient(to bottom, #2c4aac, #676f88);
+    box-shadow: rgba(21, 21, 22, 0.25) 0px 13px 27px -5px, rgba(57, 54, 71, 0.3) 0px 8px 16px -8px;
 }
 
+.login__cont  h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.login__cont a {
+    color: white;
+    font-size: 16px;
+}
+
+
+#menu-ham,
+.menu-label  {
+    display: none;
+}
+
+/* Mediaqueries */
+
 @media (max-width: 768px) {
+    
+    .header__logo {
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+
+    .header__navbar {
+        gap: 10px;
+    }
+
+    .headear__navbar__list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background: var(--btn-black);
+        border: 2px solid;
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    .headear__navbar__list a {
+        font-size: 18px;
+    }
+
+    .menu-label {
+        display: flex;
+        cursor: pointer;
+    }
+    .menu-label img {
+        display: flex;
+        color: var(--white);
+        width: 25px;
+        height: 20px;
+    }
+
+    
+    #menu-ham:checked + .headear__navbar__list {
+        display: flex;
+    }
 
     .main__cards__container {
         display: flex;
@@ -298,26 +361,40 @@ footer a:visited {
     #main__us {
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
         text-align: center;
-        font-size: 16px;
-
+        font-size: 18px;
+        font-weight: 500;
+        padding: 30px 100px;
     }
+
+    .main__us__presentation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 20px;
+    }
+
+    #main__us img {
+        width: 80vh;
+    }
+
 }
 
 @media (max-width: 320px) {
 
     #main h1 {
-        font-size: 42px;
-        padding: 40px 20px;
+        font-size: 32px;
+        padding: 0px 20px;
     }
 
     .main__presentacion {
         display: flex;
         flex-direction: column;
-        font-size: 24px;
+        font-size: 18px;
         color: white;
-        padding: 20px 40px;
+        padding: 0px 30px;
     }
 
     #main__us {
@@ -325,8 +402,6 @@ footer a:visited {
         align-items: center;
         flex-direction: column;
         text-align: center;
-        font-size: 16px;
-        max-width: 320px;
     }
 
     #main__us img, .main__cards__single {
@@ -334,6 +409,10 @@ footer a:visited {
         border-radius: 0px;
     }
 
+    .main__us__presentation {
+        font-size: 14px;
+        font-weight: 500;
+    }
     #contact {
         max-width: 320px;
         border-radius: 0px;
@@ -342,5 +421,13 @@ footer a:visited {
     .contact__father {
         display: flex;
         flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+        padding: 20px 30px;
     }
 }
