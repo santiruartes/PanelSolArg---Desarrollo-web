@@ -20,8 +20,7 @@
     font-family: "Poppins","Montserrat", "Times New Roman";
 }
 
-/* Sección header 
--Arreglar bien la lista entre inicio sesion/registro y demas*/
+/* Sección header */
 
 #header {
     display: flex;
@@ -50,7 +49,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    /* border-right: 1px solid #fffafa; */
     float: left;
     list-style: none outside none;
     padding-left: 10px;
@@ -72,14 +70,6 @@
     padding: 3px 10px;
     transition: all 0.3s ease-in;
 }
-
-
-/* .header__navbar__list :nth-child(5):hover {
-    background-color: #1b4965;
-    color: #ffffff !important;
-    border-radius: 15px;
-    transition: all 0.3s ease-in;
-} */
 
 /* Sección main */
 
@@ -182,6 +172,7 @@
 
 
 /* Contacto */
+
 #contact {
     display: flex;
     flex-direction: column;
@@ -499,7 +490,8 @@ footer a:visited {
         display: flex;
         align-items: center;
         justify-content: center;
-        /* flex-direction: column; */
         padding: 20px 30px;
     }
+
+    
 }
