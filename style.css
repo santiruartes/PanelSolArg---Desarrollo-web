@@ -263,37 +263,107 @@ footer a:visited {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(./assets/img-6.jpeg) no-repeat;
+    background: url(./assets/img-2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
 }
 
-.login__cont {
+.login__cont, .register__section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
     padding: 40px 20px;
     background: var(--white);
     border-radius: 15px;
-    width: 500px;
-    background: linear-gradient(to bottom, #2c4aac, #676f88);
+    width: 600px;
+    height: 320px;
+    background: rgba(241, 241, 241, 0.8);
     box-shadow: rgba(21, 21, 22, 0.25) 0px 13px 27px -5px, rgba(57, 54, 71, 0.3) 0px 8px 16px -8px;
 }
 
 .login__cont  h2 {
-    color: white;
+    text-align: center;
+    color: var(--btn-black);
     font-size: 32px;
     font-weight: 500;
 }
 
-.login__cont a {
-    color: white;
+
+.login__back, .register__back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 500;
+    width: 10%;
+    background-color: var(--btn-black);
+    border-radius: 5px;
+}
+
+.login__send, .register__send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--btn-black);
+    height: 10%;
+    padding: 15px;
+}
+
+
+.login__cont input, .register__section input {
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./assets/img-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.register__section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    gap: 15px;
+    border-radius: 15px;
+    background: rgba(241, 241, 241, 0.8);
+}
+
+.register__section h2 {
+    text-align: center;
+    color: var(--btn-black);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.register__section p {
+    text-align: center;
+    color: var(--btn-black);
     font-size: 16px;
 }
+
+
 
 
 #menu-ham,
@@ -305,9 +375,11 @@ footer a:visited {
 
 @media (max-width: 768px) {
     
+
     .header__logo {
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 30px;
     }
 
@@ -410,7 +482,7 @@ footer a:visited {
     }
 
     .main__us__presentation {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
     }
     #contact {

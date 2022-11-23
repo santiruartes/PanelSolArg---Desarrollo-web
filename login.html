@@ -4,26 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>PanelSolarg - Login</title>
   </head>
   <body>
     <main id="login">
-    <section class="login__cont">
-    <a href="./index.html">Volver</a>
-    <h2>Hola de nuevo!</h3>
-    <label for="usuario-email"></label>
-    <input
-      type="text"
-      id="usuario-email"
-      placeholder="Usuario/email"
-    />
+      <section class="login__cont">
+        <a class="login__back" href="./index.html">Volver</a>
+        <h2>Hola de nuevo!</h2>
 
-    <label for="pass"></label>
-    <input type="password" id="pass" placeholder="Contraseña" />
+        <label for="usuario-email"></label>
+        <input type="text" id="usuario-email" placeholder="Usuario/email" />
 
-    <a href="#"><span>Enviar</span></a>
-  </section>
+        <label for="pass"></label>
+        <input type="password" id="pass" placeholder="Contraseña" />
+
+        <a class="login__send" href="#">Ingresar</a>
+      </section>
     </main>
+    <footer>
+      <p>Copyright © 2022 <span>PanelSolarg</span> All rights reserved.</p>
+      <a href="https://www.instagram.com/?hl=es-la"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://twitter.com/home"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+    </footer>
   </body>
 </html>
