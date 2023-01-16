@@ -49,7 +49,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    border-right: 1px solid #fffafa;
     float: left;
     list-style: none outside none;
     padding-left: 10px;
@@ -57,30 +56,18 @@
     width: auto;
 }
 
-.headear__navbar__list a,  .header__navbar__list2 a {
+.headear__navbar__list a {
     font-size: 14px;
     text-align: center;
     color: white;
 }
 
-.header__navbar__list2 {
-    display: flex;
-    gap: 10px;
-}
 
-.header__navbar__list2 span {
+.header__navbar__list span {
     color: white;
     border: 1px solid;
     border-radius: 15px;
     padding: 3px 10px;
-    transition: all 0.3s ease-in;
-}
-
-
-.header__navbar__list2 :nth-child(2):hover {
-    background-color: #1b4965;
-    color: #ffffff !important;
-    border-radius: 15px;
     transition: all 0.3s ease-in;
 }
 
@@ -142,7 +129,6 @@
     height: 50%;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
 }
 
 .main__us__presentation {
@@ -201,6 +187,7 @@
 
 
 /* Contacto */
+
 #contact {
     display: flex;
     flex-direction: column;
@@ -285,14 +272,173 @@ footer a:visited {
  text-decoration: none; color: var(--white);
 }
 
+/* Login */
+
 #login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./assets/img-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login__cont, .register__section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 40px 20px;
+    background: var(--white);
+    border-radius: 15px;
+    width: 600px;
+    height: 320px;
+    background: rgba(241, 241, 241, 0.8);
+    box-shadow: rgba(21, 21, 22, 0.25) 0px 13px 27px -5px, rgba(57, 54, 71, 0.3) 0px 8px 16px -8px;
 }
+
+.login__cont  h2 {
+    text-align: center;
+    color: var(--btn-black);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+.login__back, .register__back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 500;
+    width: 10%;
+    background-color: var(--btn-black);
+    border-radius: 5px;
+}
+
+.login__send, .register__send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--btn-black);
+    height: 10%;
+    padding: 15px;
+}
+
+
+.login__cont input, .register__section input {
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./assets/img-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.register__section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    gap: 15px;
+    border-radius: 15px;
+    background: rgba(241, 241, 241, 0.8);
+}
+
+.register__section h2 {
+    text-align: center;
+    color: var(--btn-black);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.register__section p {
+    text-align: center;
+    color: var(--btn-black);
+    font-size: 16px;
+}
+
+
+
+
+#menu-ham,
+.menu-label  {
+    display: none;
+}
+
 /* Mediaqueries */
 
 @media (max-width: 768px) {
+    
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+    }
+
+    .header__navbar {
+        gap: 10px;
+    }
+
+    .headear__navbar__list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background: var(--btn-black);
+        border: 2px solid;
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    .headear__navbar__list a {
+        font-size: 18px;
+    }
+
+    .menu-label {
+        display: flex;
+        cursor: pointer;
+    }
+    .menu-label img {
+        display: flex;
+        color: var(--white);
+        width: 25px;
+        height: 20px;
+    }
+
+    
+    #menu-ham:checked + .headear__navbar__list {
+        display: flex;
+    }
 
     .main__cards__container {
         display: flex;
@@ -302,26 +448,40 @@ footer a:visited {
     #main__us {
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
         text-align: center;
-        font-size: 16px;
-
+        font-size: 18px;
+        font-weight: 500;
+        padding: 30px 100px;
     }
+
+    .main__us__presentation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 20px;
+    }
+
+    #main__us img {
+        width: 80vh;
+    }
+
 }
 
 @media (max-width: 320px) {
 
     #main h1 {
-        font-size: 42px;
-        padding: 40px 20px;
+        font-size: 32px;
+        padding: 0px 20px;
     }
 
     .main__presentacion {
         display: flex;
         flex-direction: column;
-        font-size: 24px;
+        font-size: 18px;
         color: white;
-        padding: 20px 40px;
+        padding: 0px 30px;
     }
 
     #main__us {
@@ -329,8 +489,6 @@ footer a:visited {
         align-items: center;
         flex-direction: column;
         text-align: center;
-        font-size: 16px;
-        max-width: 320px;
     }
 
     #main__us img, .main__cards__single {
@@ -338,6 +496,10 @@ footer a:visited {
         border-radius: 0px;
     }
 
+    .main__us__presentation {
+        font-size: 16px;
+        font-weight: 500;
+    }
     #contact {
         max-width: 320px;
         border-radius: 0px;
@@ -347,4 +509,13 @@ footer a:visited {
         display: flex;
         flex-direction: column;
     }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 30px;
+    }
+
+    
 }
