@@ -149,9 +149,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 30px;
   border-radius: 15px;
+}
+
+.main__us__presentation h2 {
+    text-align: left;
+    font-size: 32px;
+}
+
+.main__us__presentation p {
+    text-align: left;
+    max-width: 450px;
+    font-weight: 500;
+}
+
+.main__us__presentation p span {
+    color: var(--white);
+    background-color: var(--btn-black);
 }
 
 
@@ -190,7 +205,7 @@
     display: flex;
     flex-direction: column;
     color: var(--white);
-    padding: 40px 20px;
+    padding: 40px 200px;
     margin: 80px 0px 40px 0px;
     gap: 30px;
     background: var(--btn);
@@ -209,6 +224,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 40px;
 }
 
 .contact__main {
@@ -216,6 +232,7 @@
     flex-direction: column;
     gap: 30px;
     padding: 40px 20px;
+    text-align: left;
 }
 
 
@@ -224,6 +241,10 @@
     flex-direction: column;
     gap: 5px;
     padding: 40px 20px;
+}
+
+.contact__form h3 {
+    padding-bottom: 15px;
 }
 
 .contact__form a {
@@ -240,21 +261,24 @@
    background: var(--grey);
    width : 300px;
    padding: 0;
+   padding-left: 2px;
    margin: 0;
    border: none;
    border-radius: 3px;
+   font-weight: 400;
 }
 
 /* Footer */
 
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: var(--white);
     background: var(--black);
     gap: 30px;
-    padding: 10px 0px;
+    padding: 100px 0px;
 }
 
 footer a:visited {
