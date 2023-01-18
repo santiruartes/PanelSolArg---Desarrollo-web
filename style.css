@@ -465,11 +465,12 @@ footer a:visited {
   }
 
   #main__us img {
-    width: 80vh;
+    max-width: 300px;
   }
 
   #contact {
     max-width: 500px;
+    padding: 40px 0px;
   }
 
   .contact__father {
@@ -493,6 +494,8 @@ footer a:visited {
   }
 
   #main__us {
+    max-width: 320px;
+    padding: 30px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
