@@ -483,11 +483,11 @@ footer a:visited {
   .main__hero {
     display: flex;
     align-items: center;
-    padding: 80px 10px;
+    padding: 200px 40px;
   }
 
   .main__titulo {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .main__presentacion {
