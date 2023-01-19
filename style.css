@@ -480,9 +480,14 @@ footer a:visited {
 }
 
 @media (max-width: 320px) {
+  .main__hero {
+    display: flex;
+    align-items: center;
+    padding: 30px 10px;
+  }
+
   .main__titulo {
     font-size: 32px;
-    padding: 30px 20px;
   }
 
   .main__presentacion {
@@ -504,8 +509,8 @@ footer a:visited {
 
   #main__us img,
   .main__cards__single {
-    max-width: 320px;
-    border-radius: 0px;
+    max-width: 300px;
+    border-radius: 2px;
   }
 
   .main__us__presentation {
