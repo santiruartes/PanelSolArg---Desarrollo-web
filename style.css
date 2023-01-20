@@ -262,8 +262,8 @@ textarea {
   font-family: Poppins;
   background: var(--grey);
   width: 300px;
-  padding: 0;
-  padding-left: 4px;
+  padding: 5px;
+  padding-left: 6px;
   margin: 0;
   border: none;
   border-radius: 3px;
